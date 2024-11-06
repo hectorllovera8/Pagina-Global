@@ -1,0 +1,16 @@
+/* Header.css */
+.navbar {
+  transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.hide {
+  top: -120px; /* O la altura de tu navbar */
+}
+
+.show {
+  top: 0;
+}
+
+.navbar-background {
+  background-color: rgba(128, 128, 128, 0.8); /* Fondo gris semi-transparente */
+}

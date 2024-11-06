@@ -1,0 +1,42 @@
+/* Fondo negro semitransparente */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Mantén el fondo */
+  z-index: 0;
+}
+
+/* Animación de entrada para el texto */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ajustes del texto */
+.carousel-caption {
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  animation: slideUp 0.8s ease-out; /* Aplica la animación */
+  z-index: 1; /* Asegura que el texto esté encima del fondo */
+}
+
+.carousel-caption h1 {
+  font-size: 80px;
+  animation: slideUp 0.05s ease-out 0.1s;
+}
+
+.carousel-caption .opacity-75 {
+  font-size: 30px;
+  animation: slideUp 0.8s ease-out 0.2s;
+}
